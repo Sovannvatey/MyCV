@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pring Sovannvatey - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 0;
+        }
+        
+        .profile-photo {
+            width: 180px;
+            height: 120px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 4px solid #1976d2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #1976d2;
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+        }
+        
+        .section-line {
+            height: 2px;
+            background: linear-gradient(90deg, #1976d2, #42a5f5);
+            margin: 8px 0;
+        }
+        
+        @media print {
+            body { margin: 0; padding: 0; }
+            .a4-page { box-shadow: none; margin: 0; }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .a4-page {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 py-8">
+    <div class="a4-page">
+        <!-- Header Section -->
+        <div class="header-bg text-white p-8 pl-11">
+            <div class="flex items-center gap-12">
+                <div class="profile-photo flex-shrink-0">
+                <img src="/img/pic.jpg" alt="Pring Sovannvatey">
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-5xl font-bold tracking-wider mb-2">PRING SOVANNVATEY</h1>
+                    <p class="text-xl font-light mb-4">SOFTWARE DEVELOPER & VISUAL DESIGNER</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex">
+            <!-- Left Column -->
+            <div class="w-1/3 bg-gray-50 p-6">
+                <!-- Contact -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">CONTACT</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Khan Dankor, Phnom Penh</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                                <img src="/img/phone-call_3215105.png" alt="phoneIcon" sizes="(max-width: 25px) 100vw, 20px" class="w-4 h-4">
+                            <span>(+855) 78 927 380</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <!-- <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+
+                            </svg> -->
+                            <img src="/img/email_6732212.png" alt="email" sizes="(max-width: 20px) 100vw, 20px" class="w-4 h-4 text-blue-600">
+                            <span>sovannvateypring@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Me -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">ABOUT ME</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <span class="font-semibold">Nationality:</span> Cambodian
+                        </div>
+                        <div>
+                            <span class="font-semibold">Quote:</span> Curiosity killed the cat, but satisfaction brought it back. My life long mission is to learn and explore the world around me, to understand it better, and to contribute positively to it.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">EXPERTISED SKILLS</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>Management Skills</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>Creativity</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>Critical Thinking</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">LANGUAGE</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>Khmer</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Competition -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">COMPETITIONS</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">Turing Hackathon Cycle8</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">June 2025</h3>
+                            <p class="text-sm text-gray-600">Won 2nd place in the final round (Pitching Deck).</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">Limkokwing University Most Outstanding Highschool Student Award</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">August 2024</h3>
+                            <p class="text-sm text-gray-600">Won 7th Place out of 10 winners in the final round.</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">10th Dream Girls Design Contest</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">November 2023</h3>
+                            <p class="text-sm text-gray-600">Honorable Award</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-2/3 p-6">
+                <!-- Education -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">EDUCATION</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">PRESENT</span>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Limkokwing University</h3>
+                            <p class="text-sm text-gray-600">Visual Arts in Communication Design</p>
+                            <p>l</p>
+                            <h3 class="font-semibold text-gray-800">ISTAD</h3>
+                            <p class="text-sm text-gray-600">Software Development</p>
+                        </div>
+                        
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">New Generation School Preah Sisowath</span>
+                                <span class="text-sm text-gray-500">2018-2024</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Diploma</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">Toul Svay Prey Primary School</span>
+                                <span class="text-sm text-gray-500">2012-2017</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Elementary</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">Universal English School</span>
+                                <span class="text-sm text-gray-500">2011-2017</span>
+                            </div>
+                            <p class="text-sm text-gray-600">General English</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3">WORKING EXPERIENCES</h2>
+                    <div class="section-line w-full"></div>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">March 30 2025</span>
+                                <span class="text-sm text-blue-500">Marketing and Creative Design Team</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Cambodia Blockchain Summit</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">November 2023</span>
+                                <span class="text-sm text-blue-500">Organizing Team</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Teacher and Student Council Reflection Trip to Battambang</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">August 2023</span>
+                                <span class="text-sm text-blue-500">Maquette team and Research Presenter</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Project Sangkum Architecture Exhibition</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">February 2023</span>
+                                <span class="text-sm text-blue-500">Logistic Team and Volunteer Mentor</span>
+                            </div>
+                            <p class="text-sm text-gray-600">CAD and 3D printing Campaign</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">2022-2023</span>
+                                <span class="text-sm text-blue-500">Vice president of the Morale Team</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Member Of the NGS Preah Sisowath Student Council</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">2021-2022</span>
+                                <span class="text-sm text-blue-500">Vice President of the Environment Team</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Member Of the NGS Preah Sisowath Student Council</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">July 2022</span>
+                                <span class="text-sm text-blue-500">Project execution team</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Phnom Penh Digital Learning Campaign (Ministry of Education)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">August 2022</span>
+                                <span class="text-sm text-blue-500">Organizer and Logistic Support</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Parent Day Show (School Achievement fair)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">2018 - 2019</span>
+                                <span class="text-sm text-blue-500">Volunteer Tutor</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Friend Help Friend (School measure to help slow learners)</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">May 2017</span>
+                                <span class="text-sm text-blue-500">Co-Emcee with school director</span>
+                            </div>
+                            <p class="text-sm text-gray-600">UES Certificate Giving Ceremony</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-semibold text-blue-600">2015- 2017</span>
+                                <span class="text-sm text-blue-500">Team Manager, Translator</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Baseball Team "TIGER Ministry of Interior"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
